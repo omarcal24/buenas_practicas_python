@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+    <title>ope package &#8212; leccion3 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ope" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="ope-package">
+<h1>ope package<a class="headerlink" href="#ope-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-ope.operaciones">
+<span id="ope-operaciones-module"></span><h2>ope.operaciones module<a class="headerlink" href="#module-ope.operaciones" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="ope.operaciones.operacionesMatematicas">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ope.operaciones.</span></code><code class="sig-name descname"><span class="pre">operacionesMatematicas</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">op1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ope.operaciones.operacionesMatematicas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Operaciones matematicas
+Atributos
+———
+op1:</p>
+<blockquote>
+<div><p>este es el primer operando (int o float) que se utilizara en las operaciones</p>
+</div></blockquote>
+<dl class="simple">
+<dt>op2:</dt><dd><p>este es el segundo operando (int o float) que se utilizara en las operaciones</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>suma:</dt><dd><p>Suma los operandos op1 y op2</p>
+</dd>
+<dt>resta:</dt><dd><p>Resta los operandos op1 y op2</p>
+</dd>
+<dt>producto:</dt><dd><p>Multiplica los operandos op1 y op2</p>
+</dd>
+<dt>division:</dt><dd><p>Divide los operandos op1 y op2</p>
+</dd>
+<dt>primo:</dt><dd><p>Determina si el operando op1 es primo</p>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">operacionesMatematicas</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">oM</span> <span class="o">=</span> <span class="n">operacionesMatematicas</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">res_suma</span> <span class="o">=</span> <span class="n">oM</span><span class="o">.</span><span class="n">suma</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">res_producto</span> <span class="o">=</span> <span class="n">oM</span><span class="o">.</span><span class="n">producto</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="ope.operaciones.operacionesMatematicas.division">
+<code class="sig-name descname"><span class="pre">division</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ope.operaciones.operacionesMatematicas.division" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo division. Aplica el algoritmo de la division sobre los operandos op1 y op2
+Si op2 (denominador) es igual a 0, devolvera 0
+Inputs:
+——-</p>
+<blockquote>
+<div><p>self.op1
+self.op2</p>
+</div></blockquote>
+<blockquote>
+<div><p>res: resultado de dividir op1 entre op2</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ope.operaciones.operacionesMatematicas.primo">
+<code class="sig-name descname"><span class="pre">primo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ope.operaciones.operacionesMatematicas.primo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo primo. Determina si op1 es primo
+Inputs:
+——-</p>
+<blockquote>
+<div><p>self.op1</p>
+</div></blockquote>
+<blockquote>
+<div><p>True si op1 es primo, False si es lo contrario</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ope.operaciones.operacionesMatematicas.producto">
+<code class="sig-name descname"><span class="pre">producto</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ope.operaciones.operacionesMatematicas.producto" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo producto. Aplica el algoritmo de la multiplicacion sobre los operandos op1 y op2
+Inputs:
+——-</p>
+<blockquote>
+<div><p>self.op1
+self.op2</p>
+</div></blockquote>
+<blockquote>
+<div><p>res: resultado de multiplicar op1 por op2</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ope.operaciones.operacionesMatematicas.resta">
+<code class="sig-name descname"><span class="pre">resta</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ope.operaciones.operacionesMatematicas.resta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo resta. Aplica el algoritmo de la resta sobre los operandos op1 y op2
+Inputs:
+——-</p>
+<blockquote>
+<div><p>self.op1
+self.op2</p>
+</div></blockquote>
+<blockquote>
+<div><p>res: resultado de restar op1 y op2</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ope.operaciones.operacionesMatematicas.suma">
+<code class="sig-name descname"><span class="pre">suma</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ope.operaciones.operacionesMatematicas.suma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo suma. Aplica el algoritmo de la suma sobre los operandos op1 y op2
+Inputs:
+——-</p>
+<blockquote>
+<div><p>self.op1
+self.op2</p>
+</div></blockquote>
+<blockquote>
+<div><p>res: resultado de sumar op1 y op2</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-ope">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ope" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">leccion3</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">ope</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ope package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">ope</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">ope</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Adolfo Calderon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/ope.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
